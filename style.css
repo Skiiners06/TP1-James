@@ -149,7 +149,7 @@ h1{
         * Media queries Tablette *
         **************************/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .region-top .article-left div {
         width:200px;
         padding:1em;
@@ -158,6 +158,17 @@ h1{
         position:absolute;
         top:250px;
         left:210px;
+    }
+
+    /* Lien du menu côte à côte */
+    header nav ul {
+        display:flex;
+
+    }
+
+    /* Espace entre les 2 liens du menu  */
+    ul li {
+        margin-right:15px;
     }
 
     /* Images articles principaux : */
@@ -195,10 +206,22 @@ h1{
 
 @media screen and (min-width: 1280px){
 
+    /* Hauteur du header */
+    header{
+        height:80px;
+    }
+
+    /* taille des liens du menu */
+    header nav a {
+        padding:30px;
+    }
+
+    /* Survol des liens du menu */
     header nav a:hover {
         background: #37474f;
         color: #fff;
     }
+
 
     /* Article principal */
     .region-top .article-left {
@@ -272,6 +295,7 @@ h1{
         background-color:black;
         height:50px;
     }
+
 
 
 
